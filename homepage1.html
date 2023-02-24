@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #bottombanner{
+        height: 30px;
+        width: 12%;
+        display: flex;
+      font-size: 12PX;
+        align-items: center;
+        margin: 10px;
+        gap: 30px;
+     
+      }
+     #mid{
+       align-items: center;
+       margin-left: 60px;
+     }
+     #featured{
+        text-align: center;
+        align-items: center;
+     }
+    
+     #img1>img{
+        width: 150px;
+        margin: 25px;
+     }
+    
+     #img2>img{
+        width: 150px;
+        margin: 25px;
+     }
+     #offers{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        display: flex;
+        margin-left: 20px;
+        align-items: center;
+        text-align: center;
+
+     }
+     #offers>div>img{
+        width: 69%;
+     }
+     #shop{
+        text-align: center;
+       
+     }
+     #community{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        display: flex;
+        margin-left: 20px;
+        align-items: center;
+        text-align: center;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+       
+
+     }
+     #community>div>img{
+        width: 69%;
+      
+       
+     }
+     #view{
+        text-align: center;
+        margin-top: 20px;
+       
+     }
+     #modesens{
+            display: grid;
+            display: flex;
+            grid-template-columns: repeat(2,1fr);
+          margin-top: auto;
+            gap: 10px;
+            width: 100%;
+            font-size: small;
+            margin: auto;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            margin-top: 30px;
+            
+          
+            
+      }
+      #modesens>div{
+        margin: 20px;
+        background-color: white;
+       
+      }
+      #modesens img{
+        
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+  
+      }
+      #last{
+        display: flex;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        font-size: 10px;
+        text-align: center;
+        gap: 10px;
+        margin-top: 40px;
+       }
+    </style>
+</head>
+<body>
+    <div id="bottombanner">
+        <img src="https://cdn.modesens.com/static/img/20190228newlogo-black.svg" alt="">
+        <p>WOMEN</p>
+       <u style="font-size: 15px;">Men</u>
+        <p>BEAUTY</p>
+        <p>KIDS</p>
+        <p>HOME</p>
+        <p>DESIGNERS</p>
+        <P>COMMUNITY</P>
+        <P>WHY MODESENS</P>
+        <P style="color: red;">SALE</P>
+        <div style="margin-left: 85px; display: flex; gap: 25px;">
+            <img style="width: 20px; height: 13px; margin-top: 7px;" src="data:image/png;base64,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" alt="">
+        <img src="https://cdn.modesens.com/static/img/20200612shopping_bag2.svg" alt="">
+        <img src="https://cdn.modesens.com/static/img/20200612account_b2.svg" alt="">
+        <div id="search">
+        <input class="search-txt" type="text" name="" placeholder="Search">
+        </div>
+        </div>
+       
+</div>
+<div id="mid">
+    <img src="https://modesens.com/banner/13217/getimg/?img=%2Fbanner%2F20220824-modesens-NAP-1140x400-EN-APAC.jpg" alt="">
+</div>
+<div id="featured">
+    <h1>Featured Partners</h1>
+    <p>Compare across our 500+ partner stores to find the products you want at the best price.</p>
+</div>
+<div id="img1">
+    <img src="https://cdn.modesens.com/banner/20220708-SSENSE-logo.png" alt="">
+    <img src="https://cdn.modesens.com/banner/20220708-NET-A-PORTER-logo.png" alt="">
+    <img src="https://cdn.modesens.com/banner/20220708-FARFETCH-logo.png" alt="">
+    <img src="https://cdn.modesens.com/banner/20220708-NORDSTROM-logo.png" alt="">
+    <img src="https://cdn.modesens.com/banner/20220708-MATCHESFASHION-logo.png" alt="">
+    <img src="https://cdn.modesens.com/banner/20220708-SAKS-FIFTH-AVENUE-logo.png" alt="">
+</div>
+<div id="img2">
+<img src="https://cdn.modesens.com/banner/20220708-MYTHERESA-logo.png" alt="">
+<img src="https://cdn.modesens.com/banner/20220708-SHOPBOP-logo.png" alt="">
+<img src="https://cdn.modesens.com/banner/20220708-ITALIST-logo.png" alt="">
+<img src="https://cdn.modesens.com/banner/20220708-CETTIRE-logo.png" alt="">
+<img src="https://cdn.modesens.com/banner/20220708-LUISAVIAROMA-logo.png" alt="">
+<img src="https://cdn.modesens.com/banner/20220708-BROWNSFASHION-logo.png" alt="">
+</div>
+<div>
+    <h1 style="text-align: center; margin-bottom: 40px;">Trending Now</h1>
+</div>
+<div id="offers">
+    <div>
+        <img src="https://cdn.modesens.com/availability/40117155_1?w=400&" alt="">
+        <h3>GIVENCHY</h3>
+        <P>Logo-embroldered cotton-twill Baseball</P>
+        <h4>AUD $526-AUD $750</h4>
+        <p>Compare 14 stores</p>
+    </div>
+    <div>
+        <img src="https://cdn.modesens.com/availability/45884226_1?w=400&" alt="">
+        <h3>GIVENCHY</h3>
+        <P>Logo-embroldered cotton-twill Baseball</P>
+        <h4>AUD $526-AUD $750</h4>
+        <p>Compare 14 stores</p>
+    </div>
+    <div>
+        <img src="https://cdn.modesens.com/product/26503846_13?w=400&" alt="">
+        <h3>GIVENCHY</h3>
+        <P>Logo-embroldered cotton-twill Baseball</P>
+        <h4>AUD $526-AUD $750</h4>
+        <p>Compare 14 stores</p>
+    </div>
+    <div>
+        <img src="https://cdn.modesens.com/product/34097035_17?w=400&" alt="">
+        <h3>GIVENCHY</h3>
+        <P>Logo-embroldered cotton-twill Baseball</P>
+        <h4>AUD $526-AUD $750</h4>
+        <p>Compare 14 stores</p>
+    </div>
+</div>
+<div id="shop">
+    <button style="width: 100px; height: 40px; color: rgb(8, 8, 8);">SHOP MORE</button>
+</div>
+<div>
+    <h1 style="text-align: center; margin-bottom: 40px;">Community Posts</h1>
+</div>
+<div id="community">
+    <div>
+        <img src="https://cdn.modesens.com/umedia/1625472s?w=400&" alt="">
+        
+    </div>
+    <div>
+        <img src="https://cdn.modesens.com/umedia/1624922s?w=400&" style="width:320px ;" alt="">
+       
+    </div>
+    <div>
+        <img src="https://cdn.modesens.com/umedia/1593167s?w=400&" alt="">
+        
+    </div>
+    <div>
+        <img src="https://cdn.modesens.com/umedia/14180s?w=400&" alt="">
+        
+    </div>
+</div>
+<div id="view">
+    <button style="width: 100px; height: 40px; color: rgb(8, 8, 8);">VIEW ALL</button>
+</div>
+<div id="modesens">
+    <div>
+        <h1>Download the
+            ModeSens App</h1>
+        <p>A seamless experience that takes your style
+            to the next level.</p>
+        <button style="background-color: black ; color: white; height: 40px;">DOWNLOAD NOW</button><br>
+        <img src="https://cdn.modesens.com/static/img/20220707appdownload_en.png" style="width: 230px; margin-top: 15px;" alt="">
+        </div>
+        <div>
+            <h1>Install the ModeSens
+                Browser Extension</h1>
+            <p>Get timely, accurate product information
+                every time you browse.</p>
+            <button style="background-color: black ; color: white; height: 40px;">INSTALL NOW</button><br>
+            <img src="https://cdn.modesens.com/static/img/20211109downloadright.png" alt="">
+            </div>
+</div>
+<hr style="width: 100%; margin-top: 50px;">
+<div id="last">
+    <div>
+      <h1>CUSTOMER CARE</h1>
+      <p>Shopper Protection</p>
+      <p>Loyalty Program</p>
+      <p>Help Center</p>
+      <p>Size Guides</p>
+      <p>Contact Us / Feedback</p>
+      <p>Shipping / Returns</p>
+    </div>
+    <div>
+      <h1>INFORMATION</h1>
+      <p>About Us</p>
+      <p>Influencer Program</p>
+      <p>Partner Stores</p>
+      <p>Sitemap</p>
+    </div>
+    <div>
+      <h1>LEGAL</h1>
+      <p>Terms Of Use</p>
+      <p>Disclosure</p>
+      <p>Privacy Policy</p>
+      <p>Community Guidelines</p>
+     
+    </div>
+    <div>
+      <h1>CONNECT WITH US</h1>
+     <div style="gap: 20px; display: flex; margin-left: 55px;">
+        <img src="https://cdn.modesens.com/static/img/20220815download_ios.svg" alt="">
+        <img src="https://cdn.modesens.com/static/img/20220815download_android.svg" alt="">
+        <img src="https://cdn.modesens.com/static/img/20220815down_chromestrore.svg" alt="">
+     </div>
+      
+    </div>
+    <div>
+      <h1>NEWSLETTER SIGN UP</h1>
+      <div id="search">
+        <input class="search-txt" type="text" name="" placeholder="Email Address"><br><br>
+        <input type="radio">Male
+        <input type="radio">Female
+        <br><br>
+        <button>Submit</button>
+        </div>
+    </div>
+    
+  </div>
+
+       </div>
+       <hr style="width: 100%; margin-top: 30px;">
+       <div>
+        <div style="display: flex; gap: 10px;">
+            <img src="https://cdn.modesens.com/static/img/20180905footer_logo.svg" style="width: 30px;" alt="">
+            <p>© 2022, ModeSens Inc</p>
+            <div style="gap: 20px; display: flex; margin-left: 570px; margin-top: 10px; width: 50px; height: 35px;">
+                <img src="https://cdn.modesens.com/static/img/20220726Pinterest.svg" alt="">
+                <img src="https://cdn.modesens.com/static/img/20220726Twitter.svg" alt="">
+                <img src="https://cdn.modesens.com/static/img/20220726Ins.svg" alt="">
+                <img src="https://cdn.modesens.com/static/img/20220726Facebook.svg" alt="">
+                <img src="https://cdn.modesens.com/static/img/20220726Weibo.svg" alt="">
+                <img src="https://cdn.modesens.com/static/img/20220726Wechat.svg" alt="">
+                <img src="https://cdn.modesens.com/static/img/20220726Reddit.svg" alt="">
+                <img src="https://cdn.modesens.com/static/img/20220726Discord.svg" alt="">
+                <img src="https://cdn.modesens.com/static/img/20220811Xiaohongshu.svg" alt="">
+             </div>
+        </div>
+       </div>
+
+</body>
+</html>
